@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:background="@drawable/noche"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Bienvenidos"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="114dp"
+        android:orientation="vertical"
+        >
+
+
+        <EditText
+            android:id="@+id/eTusuario"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:hint="Usuario"
+            android:textColor="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_action_user"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/eTcontrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
+            android:drawableLeft="@drawable/ic_action_lock_closed"
+            android:textColorHint="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/bTingresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:hint="Ingresar"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:textColorHint="@color/colorWhite"
+            android:theme="@style/EstiloBotones"
+            android:drawableLeft="@drawable/ic_action_key"/>
+    </LinearLayout>
+
+</RelativeLayout>
