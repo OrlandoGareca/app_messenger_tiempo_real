@@ -12,7 +12,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
+import com.gareca.orlando.messenger.Mensajes.mensajeria;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -76,7 +76,7 @@ public class ChatActivity extends AppCompatActivity {
                 String contrasenia = Jsondatos.getString("Password");
                 if (usuario.equals(USER) && contrasenia.equals(PASSWORD)){
                     Toast.makeText(this, " Usted se ah logeado correctamente", Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(this,nuevaActividad.class);
+                    Intent i = new Intent(this,mensajeria.class);
                     startActivity(i);
                 }else
                     Toast.makeText(this, " La contraseña es incorrecta", Toast.LENGTH_SHORT).show();

@@ -18,7 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".nuevaActividad"></activity>
+        <activity android:name=".nuevaActividad" />
+        <activity android:name=".Mensajes.mensajeria"/>
+
+        <!--android:theme="@style/AppTheme.NoActionBar"/-->
+
+        <activity android:name=".card_view_mensajes"></activity>
     </application>
 
 </manifest>
