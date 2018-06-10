@@ -13,25 +13,29 @@
         android:layout_alignParentStart="true"
         android:orientation="horizontal">
 
+
         <EditText
-            android:id="@+id/editText"
-            android:layout_width="294dp"
+            android:id="@+id/eTEscribirMensaje"
+            android:layout_width="227dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:textColorHint="@color/colorWhite"
-            android:hint="Escribe un mensaje..." />
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Escribe un mensaje..."
+            android:textColorHint="@color/colorWhite" />
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/bTEnviarMensaje"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:theme="@style/EstiloBotones"
             android:hint="Enviar"
-            android:textColorHint="@color/colorWhite"/>
+            android:textColorHint="@color/colorWhite"
+            android:theme="@style/EstiloBotones" />
+
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,7 +57,7 @@
             android:layout_height="464dp"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/appBarLayout"
-            android:layout_above="@+id/editText"
+            android:layout_above="@+id/eTEscribirMensaje"
             tools:listitem="@layout/activity_card_view_mensajes">
 
 
